@@ -1,0 +1,7 @@
+init_config:
+
+instances:
+  - registry_key: ssl3.client
+    key_path: "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\SSL\ 3.0\\Client"
+    key_name: "Enabled"
+    metric_name: "win.registry.ssl3.client.enabled"
