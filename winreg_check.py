@@ -23,4 +23,4 @@ class Winreg_Check(AgentCheck):
             test_entry = client.read_entry(local_reg_path, local_reg_name)
 
         #Send the metric to Datadog
-        self.gauge(local_metric_name, test_entry.value, tags=['testKey:testValue'])
+        self.gauge(local_metric_name, test_entry.value, tags=self.instance.get('tags', []))
