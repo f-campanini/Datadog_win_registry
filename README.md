@@ -31,7 +31,7 @@ Configuration example
 ```yaml
   - registry_key: ssl3.client
     min_collection_interval: 120
-    key_path: HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Control\\SecurityProviders\\SCHANNEL\\Protocols\\SSL\\3.0\\Client
+    key_path: HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\SecurityProviders\SCHANNEL\Protocols\SSL\ 3.0\Client
     key_name: Enabled
     metric_name: win.registry.ssl3.client.enabled
     tags:
